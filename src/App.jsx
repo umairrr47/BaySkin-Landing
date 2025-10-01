@@ -7,6 +7,7 @@ import Doc from "../src/assets/doc2.jpeg"
 import R1 from "../src/assets/rr1.jpg"
 import R2 from "../src/assets/rr3.jpeg"
 import R3 from "../src/assets/r7.jpeg"
+import Footer from "./components/Footer";
 
 export default function App() {
   return (
@@ -297,54 +298,7 @@ export default function App() {
         </section>
 
         {/* Footer */}
-        <footer className="bg-white border-t">
-          <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-8 grid grid-cols-1 md:grid-cols-3 gap-6 items-start">
-            {/* Logo + clinic info */}
-            <div className="flex items-start gap-3">
-              <img
-                src={Logo}
-                alt="Bayskin Logo"
-                className="h-10 w-auto object-contain"
-              />
-              <div>
-              </div>
-            </div>
-
-            {/* Address */}
-            <div className="text-center text-sm text-gray-600">
-              <p>
-                Block D, Dayanand Colony, Lajpat Nagar,
-                <br />
-                New Delhi, 110024
-              </p>
-              <p className="mt-2">
-                Phone:{" "}
-                <a
-                  href="tel:+919810991225"
-                  className="text-[var(--primary-color)]"
-                >
-                  +91-9810991225
-                </a>
-              </p>
-            </div>
-
-            {/* Links + copyright */}
-            <div className="text-right text-sm text-gray-500">
-              <nav className="flex gap-4 justify-end mb-2">
-                <a href="#services" className="text-gray-600">
-                  Services
-                </a>
-                <a href="#about" className="text-gray-600">
-                  About
-                </a>
-                <a href="#contact" className="text-gray-600">
-                  Contact
-                </a>
-              </nav>
-              © Bayskin 2025
-            </div>
-          </div>
-        </footer>
+        <Footer/>
       </main>
 
       {/* Global styles */}
